@@ -36,7 +36,7 @@
 
 
 
-## -------------------------------------------------------------------------------------------------
+## -----------------------------------------------------------------------------------
 # Evaluation
 ## Scenario: Your class is choosing between two field trips: a museum or a zoo. The class votes on the options (each student picks one).
 
@@ -78,7 +78,7 @@
 
 
 
-## -------------------------------------------------------------------------------------------------
+
 ## -----------------------------------------------------------------------------------
 # Application
 ## Scenario: You are planning a class party. What data would you collect to help plan (for example, the number of people coming, each person's favorite snack, and if anyone has an allergy yes/no)?
