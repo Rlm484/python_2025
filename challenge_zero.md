@@ -149,29 +149,29 @@
 ## Scenario: Your teacher has one list of students with perfect attendance and another list of students with top grades. Both lists are names (text data).
 #
 ### How could you put these two lists together to find out which students are on both lists?
-- I would place all the info on a document and then put them together using a venn diagram. This visualizes clearly who has both elements.
+- I would place all the info on a document and then put them together using a venn diagram. This visualizes clearly who has both elements
 #
 ### Why would it help to organise the names clearly (for example, alphabetically or in a table) when looking for students that appear in both sets of data?
-- It helps to organize the students from a-z due to us being able to sort both top grades and perfect attendance at once, allowing us to visualize the results along the way.
+- It helps to organize the students from a-z due to us being able to sort both top grades and perfect attendance at once, allowing us to visualize the results along the way
 ## -----------------------------------------------------------------------------------
 # Critical Thinking
 ## Scenario: Imagine a toy ad says, "90% of kids love this toy!" You find out they only asked 10 kids and 9 said they loved it (yes).
 #
 ### What might be wrong or unfair about this data?
-- They might have asked kids who only have that specific toy, or those kids are being bribed. We just can't guarantee the legitimacy, especially with hardly any data from an incredible sauce.
+- They might have asked kids who only have that specific toy, or those kids are being bribed. We just can't guarantee the legitimacy, especially with hardly any data from an incredible sauce
 #
 ### What questions would you ask before believing the ad’s claim (for example, Is 10 kids a big enough sample? Did they ask a fair mix of different kids?)?
 - My main question is what is the relationship of the children to the company that makes the toys. Contractual? Familial? Friendly?
 #
 ### Explain why you would or wouldn't trust this claim based on the data.
-- Given the fact they seem to have deliberately chosen 10 kids, it seems they only chose these children so that they can score a higher rating for their product.
+- Given the fact they seem to have deliberately chosen 10 kids, it seems they only chose these children so that they can score a higher rating for their product
 ## -----------------------------------------------------------------------------------
 # Creative Thinking
 ## Scenario: Imagine you want to get everyone to read more books by holding a fun contest at school. Think of a creative way to use data in this contest. For example, you could track how many pages or books each class reads (numbers) or have students vote for their favorite book (yes/no votes or a list of titles).
 #
 ### What data would you collect?
-- I would collect which genre the students like the most by creating a competition that allows you to read a book of choice in class for 10-30 minutes. Whoever reads the most books wins, and we can gather the most popular genre people are reading to encourage more students. We can do this by buying more books of that genre for the library. This competition will last for a month.
+- I would collect which genre the students like the most by creating a competition that allows you to read a book of choice in class for 10-30 minutes. Whoever reads the most books wins, and we can gather the most popular genre people are reading to encourage more students. We can do this by buying more books of that genre for the library. This competition will last for a month
 #
 ### How would you use it to make the reading contest both fair and exciting?
-- I would make it fair by allowing students to register their books and page onto the ledger teachers have. This would mean teachers can observe what genre they are reading while making it exciting because students can read whatever book they want and miss class for 10-30 minutes to do something they enjoy for a month.
+- I would make it fair by allowing students to register their books and page onto the ledger teachers have. This would mean teachers can observe what genre they are reading while making it exciting because students can read whatever book they want and miss class for 10-30 minutes to do something they enjoy for a month
 ## -----------------------------------------------------------------------------------
