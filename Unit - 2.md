@@ -64,3 +64,14 @@ SET score TO integer          ←
 SET is_logged_in TO boolean   ← 
 SET height TO float           ← 
 SET colours TO list           ← 
+
+To print multiple variables: Easier to add commas
+e.g.
+name = "Bingo"
+age = 6
+print(name, "is", age, "years old.")
+
+End equivalently makes it so that the line below is inputed into the empty space
+print("Hello", end=" ")
+print("world!")
+# ➜ Hello world!

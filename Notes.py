@@ -5,3 +5,9 @@ A = 6
 B = 2
 sum = A - B
 print('the sum of {0} minus {1} is {2}'.format(A, B, sum))
+ #except ValueError is used if you want to tell off a person for writing an invalid answer
+name = input("Your Name?: ")
+age = 6
+print(name, "is", age, "years old.")
+print("Hello", end=" ")
+print(name)
