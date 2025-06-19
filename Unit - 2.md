@@ -75,3 +75,36 @@ End equivalently makes it so that the line below is inputed into the empty space
 print("Hello", end=" ")
 print("world!")
 # ➜ Hello world!
+
+Operations:
+Addition +
+Subtraction -
+Multiplication *
+Division /
+Floor division // (division where you leave out the remainder (9//2 = 4)) 
+Remainder %
+Exponent (powers) **
+
+Assignments:
+= (x=5)
++= (x+=1 (adds one to x (x=x+1)))
+-= (x-=2)
+*= (x*=3)
+/= (x/=2)
+
+Comparisons:
+== equal to
+!= not equal to
+> greater than
+< less than
+>= Greater or equal
+<= lesser or equal
+
+e.g.
+# String joining
+greeting = "Hello" + " " + "World"
+print(greeting)  # ➜ Hello World
+
+# String repetition
+laugh = "ha" * 3
+print(laugh)  # ➜ hahaha
