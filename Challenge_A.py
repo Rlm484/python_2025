@@ -43,8 +43,12 @@ print(" ")
 
 
 def count_games(games):
-    print("Total games: ", len (games))
+    print("Wow! We're plaing", len (games), "games!")
 
-print(f"There are {count_games()} games")
+count_games(games_list)
+
+print("We're going to have so much fun")
+print(":)")
+#print(f"There are {count_games()} games")
 #def = define, brackets are just needed, len means length, need another count_games cause it actually runs the function
     
