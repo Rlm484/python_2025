@@ -1,0 +1,5 @@
+print("Welcome to the game consciousness! We hope that you have a wonderful experience!")
+name=("What's your name?: ")
+print("<But you can't seem to remember>")
+print(" ")
+print("You wake up to a place unfamiliar to yourself")
