@@ -18,7 +18,18 @@ if choice1 == "Y" or "y":
     choice3=input("N/S/W/E: ")
     if choice3 == "N" or "n":
         print("You walk along the carpet of the hallway, following the path until you reach a bright yellow door.")
-        print("")
+        print("Do you wish to push open the door?")
+        print("<You feel nervous, this place is weird...>")
+        print("[Your consciousness urges you to keep going, don't stop]")
+        choice4= input("Do you wish to go forward? Y/N: ")
+        if choice4 == "y" or "Y":
+            print("You push open the door and look around")
+            print("You have a sudden pull to the counter")
+            print("A knife")    
+        if choice4 == "N" or "n":
+            print("Thats not the right choice")
+            print("  ")
+            print("You died. How about you try again!")
 if choice1 == "N" or "n":
     print("'Are you sure? The consequences for denial... are detrimental.'")
     print("[Your consciousness believes you made the wrong choice and to change it while you have the chance]")
