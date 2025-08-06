@@ -5,18 +5,28 @@ print(" ")
 print("You wake up to a place unfamiliar but familiar to yourself, the first thing you see? A sign")
 print("'Welcome, you have one goal destroy all 4 dolls scattered across different rooms!'")
 print("'If you do... you'll get a prize! How about it?'")
-choice1=input("Y/N? (USE A CAPITAL): ")
-if choice1 == "Y":
+choice1=input("Y/N?: ")
+if choice1 == "Y" or "y":
     print("'Very good...'")
     print("[Your consciousness feels content with this option]")
-if choice1 == "N":
+    print("As you look around, you see 4 different corridors with labels.") 
+    print("'Kitchen - North'")
+    print("'Child's room - South'") 
+    print("'Master Bedroom - East'")
+    print("'Garage - West'")
+    print("Where would you like to go?")
+    choice3=input("N/S/W/E: ")
+    if choice3 == "N" or "n":
+        print("You walk along the carpet of the hallway, following the path until you reach a bright yellow door.")
+        print("")
+if choice1 == "N" or "n":
     print("'Are you sure? The consequences for denial... are detrimental.'")
     print("[Your consciousness believes you made the wrong choice and to change it while you have the chance]")
     choice2=input("Y/N? (USE A CAPITAL): ")
-    if choice2 == "N":
+    if choice2 == "N" or "n":
         print("'You've made the right choice...'")
         print("[Your consciousness is happy]")
-    if choice2 == "Y":
+    if choice2 == "Y" or "y":
         print("'I warned you...'")
         print("[Your consciousness is fading away]")
         print("  ")
