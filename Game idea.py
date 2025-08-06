@@ -2,4 +2,9 @@ print("Welcome to the game consciousness! We hope that you have a wonderful expe
 name=("What's your name?: ")
 print("<But you can't seem to remember>")
 print(" ")
-print("You wake up to a place unfamiliar to yourself")
+print("You wake up to a place unfamiliar but familiar to yourself, the first thing you see? A sign")
+print("Welcome, you have one goal destroy all 4 dolls scattered across different rooms!")
+print("If you do... you'll get a prize! How about it?")
+choice1=("Y/N? (USE A CAPITAL): ")
+if choice1 == "Y":
+    print()
