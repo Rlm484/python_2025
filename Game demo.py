@@ -22,6 +22,10 @@ if choice1 == "Y" or "y":
         print("<You feel nervous, this place is weird...>")
         print("[Your consciousness urges you to keep going, don't stop]")
         choice4= input("Do you wish to go forward? Y/N: ")
+
+
+
+
         if choice4 == "y" or "Y":
             print("You push open the door and look around")
             print("You have a sudden pull to the counter")
@@ -43,6 +47,9 @@ if choice1 == "Y" or "y":
                 print("Whelp... don't know how you failed that")
                 print("   ")
                 print("Thank you for completing 'consciousness' the demo")
+
+
+
         if choice4 == "N" or "n":
             print("'Thats not the right choice'")
             print("[Try to keep moving]")
@@ -50,8 +57,12 @@ if choice1 == "Y" or "y":
             print("You died. How about you try again!")
         else:
             print("How'd you fail a simple Y/N?")
+
+
     else: 
         print("How'd you fail a simple input?")
+
+
 if choice1 == "N" or "n":
     print("'Are you sure? The consequences for denial... are detrimental.'")
     print("[Your consciousness believes you made the wrong choice and to change it while you have the chance]")
@@ -75,6 +86,8 @@ if choice1 == "N" or "n":
         print("[Your consciousness is unsettled]")
         print("  ")
         print("You failed, restart the game to try again")
+
+        
 else:
     print("'That's not the script'")
     print("[Your consciousness is unsettled]")
