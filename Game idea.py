@@ -15,7 +15,7 @@ if choice1 == "Y" or "y":
     print("'Master Bedroom - East'")
     print("'Garage - West'")
     print("Where would you like to go?")
-    choice3=input("N/S/W/E: ")
+    choice3=input("N/S/W/E (You can only go to the kitchen in the demo): ")
     if choice3 == "N" or "n":
         print("You walk along the carpet of the hallway, following the path until you reach a bright yellow door.")
         print("Do you wish to push open the door?")
@@ -38,23 +38,37 @@ if choice1 == "Y" or "y":
                 print("[Your consciousness is annoyed]")
                 print("   ")
                 print("Thank you for completing 'consciousness' the demo")
+                
+            else:
+                print("Whelp...")
+                print("   ")
+                print("Thank you for completing 'consciousness' the demo")
         if choice4 == "N" or "n":
             print("'Thats not the right choice'")
             print("[Try to keep moving]")
             print("  ")
             print("You died. How about you try again!")
+        else:
+            print("How'd you fail a simple Y/N?")
+    else: 
+        print("How'd you fail a simple input?")
 if choice1 == "N" or "n":
     print("'Are you sure? The consequences for denial... are detrimental.'")
     print("[Your consciousness believes you made the wrong choice and to change it while you have the chance]")
     choice2=input("Y/N? (USE A CAPITAL): ")
-    if choice2 == "N" or "n":
+    if choice2 == "N":
         print("'You've made the right choice...'")
         print("[Your consciousness is happy]")
-    if choice2 == "Y" or "y":
+    if choice2 == "Y":
         print("'I warned you...'")
         print("[You can't disobey him]")
         print("  ")
         print("Uh oh! You died! How about you try again? :)")
+    if choice2 == "y" or "n":
+        print("'I told you to use a capital...'")
+        print("Idiot")
+        print("ERROR: YOU'VE BEEN KICKED OUT OF THE SYSTEM PLEASE RESTART")
+        print("<You feel offended>")
     else:
         print("'That's not the script...'")
         print("  ")
