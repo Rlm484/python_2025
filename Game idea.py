@@ -25,9 +25,22 @@ if choice1 == "Y" or "y":
         if choice4 == "y" or "Y":
             print("You push open the door and look around")
             print("You have a sudden pull to the counter")
-            print("A knife")    
+            print("A knife")   
+            print("Do you wish to take the knife?")
+            choice5=input("Y/N: ") 
+            if choice5 == "Y" or "y":
+                print("You here a new voice along with your consciousness...")
+                print("|Why can't I do anything right? I'm sorry my child...|")
+                print("   ")
+                print("Thank you for completing 'consciousness' the demo")
+            if choice5 == "N" or "n":
+                print("You might regret this later")
+                print("[Your consciousness is annoyed]")
+                print("   ")
+                print("Thank you for completing 'consciousness' the demo")
         if choice4 == "N" or "n":
-            print("Thats not the right choice")
+            print("'Thats not the right choice'")
+            print("[Try to keep moving]")
             print("  ")
             print("You died. How about you try again!")
 if choice1 == "N" or "n":
@@ -39,7 +52,7 @@ if choice1 == "N" or "n":
         print("[Your consciousness is happy]")
     if choice2 == "Y" or "y":
         print("'I warned you...'")
-        print("[Your consciousness is fading away]")
+        print("[You can't disobey him]")
         print("  ")
         print("Uh oh! You died! How about you try again? :)")
     else:
