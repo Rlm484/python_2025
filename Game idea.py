@@ -40,7 +40,7 @@ if choice1 == "Y" or "y":
                 print("Thank you for completing 'consciousness' the demo")
                 
             else:
-                print("Whelp...")
+                print("Whelp... don't know how you failed that")
                 print("   ")
                 print("Thank you for completing 'consciousness' the demo")
         if choice4 == "N" or "n":
@@ -67,13 +67,16 @@ if choice1 == "N" or "n":
     if choice2 == "y" or "n":
         print("'I told you to use a capital...'")
         print("Idiot")
+        print("[Your consciousness is dissapointed in yourself]")
         print("ERROR: YOU'VE BEEN KICKED OUT OF THE SYSTEM PLEASE RESTART")
-        print("<You feel offended>")
+        print("<Rude... Wait- >")
     else:
         print("'That's not the script...'")
+        print("[Your consciousness is unsettled]")
         print("  ")
         print("You failed, restart the game to try again")
 else:
     print("'That's not the script'")
+    print("[Your consciousness is unsettled]")
     print("  ")
     print("You failed, restart the game to try again")
