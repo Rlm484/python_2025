@@ -15,7 +15,7 @@ def clear_screen():
 
 
 
-print("Welcome to the game consciousness! We hope that you have a wonderful experience!")
+print("Welcome to the game Consciousness! We hope that you have a wonderful experience!")
 name= input("What's your name?: ")
 print("<But you can't seem to remember>")
 print(" ")
@@ -26,8 +26,9 @@ choice1=input("Y/N?: ")
 
 
 if choice1.lower() == "y":
+    print("  ")
     print ("'Very good...'")
-    print("[Your consciousness feels content with this option]")
+    print("[Your Consciousness feels content with this option]")
     print("<As you look around, you see 4 different corridors with labels.>")
     print("'Kitchen - North'")
     print("'Child's room - South'")
@@ -38,7 +39,7 @@ if choice1.lower() == "y":
     if choice3.lower() == "n":
         print("<You walk along the carpet of the hallway, following the path until you reach a bright yellow door.>")
         print("<Do you wish to push open the door?>")
-        print("[Your consciousness urges you to keep going, don't stop]")
+        print("[Your Consciousness urges you to keep going, don't stop]")
         choice4= input("Y/N?: ")
         if choice4.lower() == "y":
             print("<You push open the door and look around>")
@@ -47,21 +48,21 @@ if choice1.lower() == "y":
             print("<Do you wish to take the knife?>")
             choice5=input("Y/N?: ")
             if choice5.lower() == "y":
-                print("<You here a new voice along with your consciousness... >")
+                print("<You here a new voice along with your Consciousness... >")
                 print("|I'm sorry, I thought I could give you everything...|")
                 print("   ")
-                print("Thank you for completing 'consciousness' the demo")
+                print("Thank you for completing 'Consciousness' the demo")
                 clear_screen()
             if choice5.lower() == "n":
                 print("'You might regret this later'")
-                print("[Your consciousness is annoyed]")
+                print("[Your Consciousness is annoyed]")
                 print("   ")
-                print("Thank you for completing 'consciousness' the demo")
+                print("Thank you for completing 'Consciousness' the demo")
                 clear_screen()
             else:
                 print("'Whelp... don't know how you failed that'")
                 print("   ")
-                print("Thank you for completing 'consciousness' the demo")
+                print("Thank you for completing 'Consciousness' the demo")
                 clear_screen()
         if choice4.lower() == "n":
             print("'That's not the right choice'")
@@ -79,7 +80,7 @@ if choice1.lower() == "y":
 
 if choice1.lower() == "n":
     print("'Are you sure? The consequences for denial... are detrimental.'")
-    print("[Your consciousness believes you made the wrong choice and to change it while you have the chance]")
+    print("[Your Consciousness believes you made the wrong choice and to change it while you have the chance]")
     choice2=input("Y/N? (CAPITAL): ")
     if choice2 == "N":
         print("'You've made the right choice... But you made it too late'")
@@ -95,7 +96,7 @@ if choice1.lower() == "n":
     if choice2 == "y" or "n":
         print("'I told you to use a capital...'")
         print("'︎♓♎︎♓︎□︎⧫︎'")
-        print("[Your consciousness is dissapointed in yourself]")
+        print("[Your Consciousness is dissapointed in yourself]")
         print("ERROR: YOU'VE BEEN KICKED OUT OF THE SYSTEM PLEASE RESTART")
         print("<Rude>")
         clear_screen()
