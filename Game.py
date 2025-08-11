@@ -48,7 +48,7 @@ if choice1.lower() == "y":
     ani("'Master Bedroom - East'")
     ani("'Garage - West'")
     ani("<Where would you like to go?>")
-    choice3=inani("N/S/W/E (You can only go to the kitchen in the demo): ")
+    choice3=inani("N/S/W/E: ")
     if choice3.lower() == "n":
         ani("  ")
         ani("<You walk along the carpet of the hallway, following the path until you reach a bright yellow door.>")
@@ -74,13 +74,22 @@ if choice1.lower() == "y":
                 ani("'You might regret this later'")
                 ani("[Your Consciousness is annoyed]")
                 ani("   ")
-                print("Thank you for completing 'Consciousness' the demo")
+                ani("<You turn around from the counter and realise that there's a doll>")
+                ani("<It's just standing>")
+                ani("<Waiting>")
+                ani("   ")
+                ani("[Your consciousness urges you to destroy it]")
+                ani("<You don't have a choice>")
+                ani("    ")
+                ani("<You don't have a weapon...>")
+                ani("  ")
+                ani("YOU DIED?! YOU ♓♎︎♓︎□︎⧫︎")
+
                 clear_screen()
             else:
                 ani("  ")
                 ani("'Whelp... don't know how you failed that'")
                 ani("   ")
-                ani("Thank you for completing 'Consciousness' the demo")
                 clear_screen()
         if choice4.lower() == "n":
             ani("  ")
