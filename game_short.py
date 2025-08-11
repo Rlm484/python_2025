@@ -1,3 +1,4 @@
+#NOT MINE
 def start_game():
     print("Welcome to 'Escape the Haunted House'!")
     print("You must navigate through the rooms, solve puzzles, and find the exit.")
@@ -39,7 +40,8 @@ def kitchen():
 
 maxAttempts=3
 
-def checker()
+def checker():
+    print("dsaudsh")
 
 while True:
     x=int(input("val"))
