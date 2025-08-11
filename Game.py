@@ -12,16 +12,22 @@ def clear_screen():
     else:  # macOS and Linux
         os.system('clear')
 
+def ani(text, delay=0.01):
+    for char in text:
+        sys.stdout.write(char)
+        sys.stdout.flush()
+        time.sleep(delay)
+    print()  # Move to the next line
 
 
 
-print("Welcome to the game Consciousness! We hope that you have a wonderful experience!")
-name= input("What's your name?: ")
-print("<But you can't seem to remember>")
-print(" ")
-print("<You wake up to a place unfamiliar but familiar to yourself, the first thing you see? A sign>")
-print("'Welcome, you have one goal destroy all 4 dolls scattered across different rooms!'")
-print("'If you do... you'll get a prize! How about it?'")
+ani("Welcome to the game Consciousness! We hope that you have a wonderful experience!")
+name= ani(input("What's your name?: "))
+ani("<But you can't seem to remember>")
+ani(" ")
+ani("<You wake up to a place unfamiliar but familiar to yourself, the first thing you see? A sign>")
+ani("'Welcome, you have one goal destroy all 4 dolls scattered across different rooms!'")
+ani("'If you do... you'll get a prize! How about it?'")
 choice1=input("Y/N?: ")
 
 
