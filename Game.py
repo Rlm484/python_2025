@@ -12,14 +12,14 @@ def clear_screen():
     else:  # macOS and Linux
         os.system('clear')
 
-def ani(text, delay=0.05):
+def ani(text, delay=0.06):
     for char in text:
         sys.stdout.write(char)
         sys.stdout.flush()
         time.sleep(delay)
     print()  # Move to the next line
 
-def inani(text, delay=0.05):
+def inani(text, delay=0.06):
     for char in text:
         sys.stdout.write(char)
         sys.stdout.flush()
@@ -47,22 +47,22 @@ if choice1.lower() == "y":
     ani("'Child's room - South'")
     ani("'Master Bedroom - East'")
     ani("'Garage - West'")
-    ani("[You start]")
+    ani("[You start to look to each path]")
     choice3=inani("N/S/W/E: ")
-    if choice3.lower() == "n":
+    if choice3 == "n" or "N":
         ani("  ")
-        ani("<You walk along the carpet of the hallway, following the path until you reach a bright yellow door.>")
+        ani("<You walk along the carpet of the north hallway, following the path until you reach a bright yellow door.>")
         ani("<Do you wish to push open the door?>")
         ani("[Your Consciousness urges you to keep going, don't stop]")
         choice4= inani("Y/N?: ")
-        if choice4.lower() == "y":
+        if choice4 == "y" or "Y":
             ani("  ")
             ani("<You push open the door and look around>")
             ani("<You have a sudden pull to the counter>")
             ani("<A knife>")  
             ani("<Do you wish to take the knife?>")
             choice5=inani("Y/N?: ")
-            if choice5.lower() == "y":
+            if choice5 == "y" or "Y":
                 ani("  ")
                 ani("<You here a new voice along with your Consciousness... >")
                 ani("|I'm sorry, I thought I could give you everything...|")
@@ -79,8 +79,58 @@ if choice1.lower() == "y":
                 ani("|I'm so sorry|")
                 ani("  ")
                 ani("<The doll gives you a riddle...>")
-                ani("||")
-            if choice5.lower() == "n":
+                ani("|What is the most important thing to a chef?|")
+                ani("<Your choices: Their Knife (a); Their Skill (b); Their Workspace (c); Their Integrity (d)>")
+                choice6=inani("<Your answer>: ")
+                if choice6 == "a" or "A":
+                    ani("  ")
+                    ani("'You selected the correct answer'")
+                    ani("'Now you have one last thing to do'")
+                    choice7=inani("'DO IT (Y/N): '")
+                    if choice7 == "y" or "Y":
+                        ani("|Why?|", delay=0.5)
+                        ani("  ")
+                        ani("<But the voice remains...>")
+                        ani("|I tried my best|")
+                        ani("  ")
+                        ani("'You did such a good job'")
+                        ani("[You need to keep moving]")
+                        choice8= inani("S/W/E: ")
+                        if choice8 == "s" or "S":
+                            ani("<You shakely walk out the yellow door and out into the room that started everything>")
+                            ani("<You slowly walk towards the south hallway until you see the sign>")
+                            ani("'Only 3 more to go :)'")
+                            ani("[You feel wonderful]")
+                            ani("<You feel unnerved>")
+                            ani("  ")
+                            ani("<This time you see a cute pastel blue door at the end of the hallway>")
+                            ani("<It makes your heart ache>")
+                            ani("   ")
+                            choice9=inani("Go in? Y/N: ")
+                            if choice9 == "y" or "Y":
+                                ani("[:)]")
+                                ani("<You push the door slightly and see a broken rattle>")
+                                ani(" ")
+                                ani("[You already have a knife]")
+                                ani("<You push the door and see a sleeping child?")
+                                ani("...", delay=0.25)
+                                ani("<Not a child.>")
+                                ani("[It's another doll! After this? Only 2 more!]")
+                                ani("|...|")
+                                ani("   ")
+                                ani("'Well that's no fun. How about this? I'll give you a puzzle!'")
+                                choice10=inani("Y/N: ")
+                                if choice10 == "y" or "Y":
+                                    ani("'Great'")
+                                    ani("'But i'll give you some time to explore... they're asleep anyways...'")
+                                    choice11=inani("Explore? (Y/N): ")
+                                    if choice11 == "y" or "Y":
+                                        ani("'Sounds great, tell me when your done'")
+                                        ani("Where would you like to look first?")
+                                        ani("Closet, Bed, Toy shelf")
+                                        choice12=inani("Choose...: ")
+
+            if choice5 == "n" or "N":
                 ani("  ")
                 ani("'You might regret this later'")
                 ani("[Your Consciousness is annoyed]")
@@ -94,14 +144,14 @@ if choice1.lower() == "y":
                 ani("    ")
                 ani("<You don't have a weapon...>")
                 ani("  ")
-                ani("YOU DIED?! YOU ♓♎︎♓︎□︎⧫︎")
+                ani("YOU DIED?! YOU ♓♎︎♓︎□︎⧫︎", delay=0.07)
                 clear_screen()
             else:
                 ani("  ")
                 ani("'Whelp... don't know how you failed that'")
                 ani("   ")
                 clear_screen()
-        if choice4.lower() == "n":
+        if choice4 == "n" or "N":
             ani("  ")
             ani("'That's not the right choice'")
             ani("[Try to keep moving]")
@@ -141,7 +191,7 @@ if choice1.lower() == "n":
         ani("  ")
         ani("'I told you to use a capital...'")
         ani("  ")
-        ani("'︎♓♎︎♓︎□︎⧫︎'")
+        ani("'︎♓♎︎♓︎□︎⧫︎'", delay=0.5)
         ani("  ")
         ani("[Your Consciousness is dissapointed in yourself]")
         ani("  ")
@@ -150,7 +200,7 @@ if choice1.lower() == "n":
         clear_screen()
     else:
         ani("  ")
-        ani("'⧫︎♒︎♋︎⧫︎🕯︎⬧︎ ■︎□︎⧫︎ ⧫︎♒︎ ︎♏⬧︎♍︎❒︎♓︎ ︎◻⧫︎...'")
+        ani("'⧫︎♒︎♋︎⧫︎🕯︎⬧︎ ■︎□︎⧫︎ ⧫︎♒︎ ︎♏⬧︎♍︎❒︎♓︎ ︎◻⧫︎...'", delay=0.2)
         ani("Your feeling unsettled")
         ani("  ")
         ani("You failed, restart the game to try again") 
@@ -159,7 +209,7 @@ if choice1.lower() == "n":
 
 else:
     ani("  ")
-    ani("'⧫︎♒︎♋︎⧫︎🕯︎⬧︎ ■︎□︎⧫︎ ⧫︎♒︎ ︎♏⬧︎♍︎❒︎♓︎ ︎◻⧫︎...'")
+    ani("'⧫︎♒︎♋︎⧫︎🕯︎⬧︎ ■︎□︎⧫︎ ⧫︎♒︎ ︎♏⬧︎♍︎❒︎♓︎ ︎◻⧫︎...'", delay=0.2)
     ani("Your feeling unsettled")
     ani("  ")
     ani("You failed, restart the game to try again") 
