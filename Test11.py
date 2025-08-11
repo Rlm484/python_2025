@@ -1,3 +1,11 @@
-print("Welcome to the world of Hogwarts, what subject do you wish to take?")
-list ("Magic","Transfiguration","Defense against the dark arts")
-print(list)
+import sys
+import time
+
+def typewriter_effect(text, delay=0.1):
+    for char in text:
+        sys.stdout.write(char)
+        sys.stdout.flush()
+        time.sleep(delay)
+    print()  # Move to the next line
+
+typewriter_effect("Hello, this is a typewriter animation!", delay=0.1)
