@@ -5,7 +5,7 @@ import time
 
 def clear_screen():
     print('...')
-    time.sleep(20)
+    time.sleep(60)
     # Check the operating system and run the appropriate clear command
     if os.name == 'nt':  # Windows
         os.system('cls')
@@ -84,7 +84,7 @@ if choice1.lower() == "y":
                 choice6=inani("<Your answer>: ")
                 if choice6 == "a" or "A":
                     ani("  ")
-                    ani("'You selected the correct answer'")
+                    ani("'You selected the correct answer!'")
                     ani("'Now you have one last thing to do'")
                     choice7=inani("'DO IT (Y/N): '")
                     if choice7 == "y" or "Y":
@@ -125,14 +125,14 @@ if choice1.lower() == "y":
                                     ani("'But i'll give you some time to explore... they're asleep anyways...'")
                                     choice11=inani("Explore? (Y/N): ")
                                     if choice11 == "y" or "Y":
-                                        ani("'Sounds great, tell me when your done'")
-                                        ani("Where would you like to look first?")
+                                        ani("'Sounds great, tell me when you're done'")
+                                        ani("Where would you like to look?")
                                         ani("Closet, Bed, Toy shelf")
                                         choice12=inani("Choose...: ")
                                         if choice12 == "Closet" or "closet":
                                             ani("<You walk towards the closet>")
                                             ani("<Your heart hurts even more>")
-                                            ani("|Do you remember?|", delay=0.09)
+                                            ani("|Do you remember?|", delay=0.2)
                                             ani("   ")
                                             choice13=inani("Attempt to open it? (Y/N): ")
                                             if choice13 == "y" or "Y":
@@ -152,7 +152,7 @@ if choice1.lower() == "y":
                                                         ani("<You return to the ''childlike'' dolls bed>")
                                                         ani("<Beside the sleeping child is a paper puzzle>")
                                                         ani("   ")
-                                                        ani("'I made sure to make the puzzle they intended to with the responses you would have given'")
+                                                        ani("'I made sure to make the puzzle they intended to, with the responses you would have given'")
                                                         ani("  ")
                                                         ani("~Don't you recognize me? Don't you remember me?... Don't you love me?~", delay=0.35)
                                                         ani("<Your choices: ...;...;...;...;>")
@@ -167,7 +167,7 @@ if choice1.lower() == "y":
                                                         choice17=inani("[Only 2 more] (W/E): ")
                                                         if choice17 == "W" or "w":
                                                             ani("<You have to keep moving, no point in stopping now>")
-                                                            ani("<You know the consequences of failure>", delay=0.09)
+                                                            ani("<You know the consequences of failure>", delay=0.2)
                                                             ani("<You go back to the main room>")
                                                             ani("<You feel hatred towards yourself>")
                                                             ani("[You feel pride towards yourself]")
@@ -176,7 +176,7 @@ if choice1.lower() == "y":
                                                             ani("'Only 2 more to go, ;)'")
                                                             ani("  ")
                                                             ani("<You walk along the next hallway, this time, a dark green door awaits you>")
-                                                            ani("|My room... our room|", delay=0.09)
+                                                            ani("|My room... our room|", delay=0.2)
                                                             ani("[Be careful]")
                                                             choice18=inani("Do you wish to open the door? (Y/N): ")
                                                             if choice18 == "Y" or "y":
@@ -209,14 +209,14 @@ if choice1.lower() == "y":
                                                                             ani(" ")
                                                                             ani("[You stab him happily]")
                                                                             ani("<You stab him regretfully>")
-                                                                            ani("She... She stabs... She stabs him with guilt", delay=0.2)
+                                                                            ani("|She... She stabs... She stabs him with guilt|", delay=0.2)
                                                                             ani("  ")
                                                                             ani("[Keep moving]")
                                                                             ani("  ")
 
 
                                     else:
-                                        ani("'Your such a party pooper'")
+                                        ani("'You're such a party pooper'")
                                         ani("  ")
                                         ani("'⍓︎□︎◆︎ ♎︎♓︎♏︎♎︎'")
                                         clear_screen()
