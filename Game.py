@@ -129,6 +129,34 @@ if choice1.lower() == "y":
                                         ani("Where would you like to look first?")
                                         ani("Closet, Bed, Toy shelf")
                                         choice12=inani("Choose...: ")
+                                        if choice12 == "Closet" or "closet":
+                                            ani("<You walk towards the closet>")
+                                            ani("<Your heart hurts even more>")
+                                            ani("|Do you remember?|", delay=0.09)
+                                            ani("   ")
+                                            choice13=inani("Attempt to open it? (Y/N): ")
+                                            if choice13 == "y" or "Y":
+                                                ani("<You open the closet and realise it's a door to a secret room>")
+                                                ani("<There's a padlock with 4 digits on it>")
+                                                ani("Do you want to try openning the door? You will only have one shot")
+                                                ani("|...This is the least I can do for you|")
+                                                ani("|3;8|")
+                                                choice14=inani("Open the door? (Type the 4 digit code): ")
+                                                if choice14 == "3684":
+                                                    ani("good work")
+                                                else:
+                                                    ani("You failed to open the door")
+                                                    ani("[Wanna explore somewhere else?]")
+                                                    choice15=inani("Y/N?: ")
+                                                    if choice15 == "n" or "N":
+                                                        ani("<You return to the ''childlike'' dolls bed>")
+                                                        ani("<Beside the sleeping child is a paper puzzle>")
+                                                        ani("   ")
+                                                        ani("'I made sure to make the puzzle they intended to with the responses you would have given'")
+                                                        ani("  ")
+                                                        ani("~Don't you recognize me? Don't you remember me?... Dont't you love me?~", delay=0.35)
+                                                        ani("<Your choices: ...;...;...;...;>")
+                                                        choice16=inani("<Your answer>: ")
 
             if choice5 == "n" or "N":
                 ani("  ")
