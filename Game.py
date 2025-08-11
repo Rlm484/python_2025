@@ -47,7 +47,7 @@ if choice1.lower() == "y":
     ani("'Child's room - South'")
     ani("'Master Bedroom - East'")
     ani("'Garage - West'")
-    ani("<Where would you like to go?>")
+    ani("[You start]")
     choice3=inani("N/S/W/E: ")
     if choice3.lower() == "n":
         ani("  ")
@@ -67,8 +67,19 @@ if choice1.lower() == "y":
                 ani("<You here a new voice along with your Consciousness... >")
                 ani("|I'm sorry, I thought I could give you everything...|")
                 ani("   ")
-                ani("Thank you for completing 'Consciousness' the demo")
-                clear_screen()
+                ani("<You turn around from the counter and realise that there's a doll>")
+                ani("<It's just standing>")
+                ani("<Waiting>")
+                ani("   ")
+                ani("[Your consciousness urges you to destroy it]")
+                ani("<You don't have a choice>")
+                ani("    ")
+                ani("|Why are you here?|")
+                ani("|...|")
+                ani("|I'm so sorry|")
+                ani("  ")
+                ani("<The doll gives you a riddle...>")
+                ani("||")
             if choice5.lower() == "n":
                 ani("  ")
                 ani("'You might regret this later'")
@@ -84,7 +95,6 @@ if choice1.lower() == "y":
                 ani("<You don't have a weapon...>")
                 ani("  ")
                 ani("YOU DIED?! YOU ♓♎︎♓︎□︎⧫︎")
-
                 clear_screen()
             else:
                 ani("  ")
