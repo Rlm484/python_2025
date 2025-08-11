@@ -1,0 +1,1 @@
+#As you can see, these are all helpful things I learnt with game idea being my first attempt at the game :)
