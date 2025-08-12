@@ -18,11 +18,11 @@ def ani(text, delay=0.06):
     print()  # Move to the next line
 
 #def inani(text, delay=0.06):
-    for char in text:
-        sys.stdout.write(char)
-        sys.stdout.flush()
-        time.sleep(delay)
-    input()  # Move to the next line
+    #for char in text:
+        #sys.stdout.write(char)
+        #sys.stdout.flush()
+        #time.sleep(delay)
+    #input()  # Move to the next line
 
 def intro():
     ani("Welcome to the game Consciousness! We hope that you have a wonderful experience!")
