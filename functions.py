@@ -17,7 +17,7 @@ def ani(text, delay=0.06):
         time.sleep(delay)
     print()  # Move to the next line
 
-#def inani(text, delay=0.06):
+#def inani(text, delay=0.06):   #scrapped due to bugging issues regarding global code
     #for char in text:
         #sys.stdout.write(char)
         #sys.stdout.flush()
@@ -37,9 +37,9 @@ def intro():
     choice1()
 
 def choice1():
-    choice1 = input("Y/N: ")
+    choice1a = input("Y/N: ")
     
-    if choice1 == "Y" or "y":
+    if choice1a.lower() == 'y':
         ani("  ")
         ani("'Very good...'")
         ani("[Your Consciousness feels content with this option]")
@@ -49,37 +49,36 @@ def choice1():
         ani("'Master Bedroom - East'")
         ani("'Garage - West'")
         ani("[You start to look to each path]")
+        choice3()
+    elif choice1a.lower() == 'n':
+        ani("  ")
+        ani("'Are you sure? The consequences for denial... are detrimental.'")
+        ani("[Your Consciousness believes you made the wrong choice and to change it while you have the chance]")
+        choice2()
 
-    else: 
-        if choice1 == "N" or "n":
-            ani("  ")
-            ani("'Are you sure? The consequences for denial... are detrimental.'")
-            ani("[Your Consciousness believes you made the wrong choice and to change it while you have the chance]")
-            choice2()
-
-        else:
-            print(choice1)
-            ani("  ")
-            ani("'⧫︎♒︎♋︎⧫︎🕯︎⬧︎ ■︎□︎⧫︎ ⧫︎♒︎ ︎♏⬧︎♍︎❒︎♓︎ ︎◻⧫︎...'", delay=0.2)
-            ani("Your feeling unsettled")
-            ani("  ")
-            ani("You failed, restart the game to try again") 
-            clear_screen()
+    else:
+        print(choice1)
+        ani("  ")
+        ani("'⧫︎♒︎♋︎⧫︎🕯︎⬧︎ ■︎□︎⧫︎ ⧫︎♒︎ ︎♏⬧︎♍︎❒︎♓︎ ︎◻⧫︎...'", delay=0.2)
+        ani("Your feeling unsettled")
+        ani("  ")
+        ani("You failed, restart the game to try again") 
+        clear_screen()
 
 def choice2():
-    choice2=input("Y/N? (CAPITAL): ")
-    if choice2 == "N":
+    choice2a=input("Y/N? (CAPITAL): ")
+    if choice2a == "N":
         ani("  ")
         ani("'You've made the right choice... I'll take you back to where you went wrong'")
         choice1()
-    elif choice2 == "Y":
+    elif choice2a == "Y":
         ani("  ")
         ani("'I warned you...'")
         ani("[You can't escape ♓︎⧫︎🕯︎⬧︎ ♑︎❒︎♓︎ ︎◻]")
         ani("  ")
         ani("Uh oh! You died! How about you try again?")
         clear_screen()
-    elif choice2 == "y" or "n":
+    elif choice2a == "y" or "n":
         ani("  ")
         ani("'I told you to use a capital...'")
         ani("  ")
@@ -98,4 +97,20 @@ def choice2():
         ani("You failed, restart the game to try again") 
         clear_screen()
 
-intro()
+def choice3():
+    choice3a = input("N/S/W/E: ")
+    if choice3a.lower() == "n":
+        kitchen()
+    elif choice3a.lower() == "s":
+        childs()
+    elif choice3a.lower() == "w":
+        master()
+    elif choice3a.lower() == "e":
+        garage()
+    else:
+        ani(" ")
+        ani("'That's not an option'")
+        ani("Try again")
+        choice3()
+        
+choice3()
