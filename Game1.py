@@ -153,7 +153,7 @@ if choice1.lower() == "y":
                                                     ani("<There's only one entry intact>")
                                                     ani("Read the entry?")
                                                     mychoice=inani("Y/N: ")
-                                                    ani("But your no longer in control", delay=0.2)
+                                                    ani("But your no longer in control", delay=0.15)
                                                     ani("  ")
                                                     ani("<Dear Diary, I finally found a home!>")
                                                     ani("<I have a mum, a dad, and even a little brother! They even have a dog!>")
