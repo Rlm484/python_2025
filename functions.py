@@ -17,24 +17,33 @@ def ani(text, delay=0.06):
         time.sleep(delay)
     print()  # Move to the next line
 
-#def inani(text, delay=0.06):   #scrapped due to bugging issues regarding global code
+#def inani(text, delay=0.06):       #scrapped due to bugging issues regarding global code
     #for char in text:
         #sys.stdout.write(char)
         #sys.stdout.flush()
         #time.sleep(delay)
     #input()  # Move to the next line
 
-def intro():
-    ani("Welcome to the game Consciousness! We hope that you have a wonderful experience!")
-    name=input("What's your name?: ") 
-    name
-    ani("<But you can't seem to remember>")
-    ani(" ")
-    ani("<You wake up to a place unfamiliar but familiar to yourself>")
-    ani("<The first thing you see? A sign>")
-    ani("'Welcome, you have one goal destroy all 4 dolls scattered across different rooms!'")
-    ani("'If you do... you'll get a prize! How about it?'")
-    choice1()
+#def intro():                       #scrapped due to the need of the variable "name" to be useable through all code
+    #ani("Welcome to the game Consciousness! We hope that you have a wonderful experience!")
+    #name=input("What's your name?: ") 
+    #name
+    #ani("<But you can't seem to remember>")
+    #ani(" ")
+    #ani("<You wake up to a place unfamiliar but familiar to yourself>")
+    #ani("<The first thing you see? A sign>")
+    #ani("'Welcome, you have one goal destroy all 4 dolls scattered across different rooms!'")
+    #ani("'If you do... you'll get a prize! How about it?'")
+    #choice1()
+
+ani("Welcome to the game Consciousness! We hope that you have a wonderful experience!")
+name=input("What's your name?: ") 
+ani("<But you can't seem to remember>")
+ani(" ")
+ani("<You wake up to a place unfamiliar but familiar to yourself>")
+ani("<The first thing you see? A sign>")
+ani("'Welcome, you have one goal destroy all 4 dolls scattered across different rooms!'")
+ani("'If you do... you'll get a prize! How about it?'")
 
 def choice1():
     choice1a = input("Y/N: ")
@@ -201,7 +210,7 @@ def choice6n():
         clear_screen()
 
 def choice7n():
-    choice7na=input("'DO IT (Y/N): '")
+    choice7na=input("'DO IT' (Y/N): ")
     if choice7na == "y" or "Y":
         ani("|Why?|", delay=0.5)
         ani("  ")
@@ -227,11 +236,12 @@ def choice8n():
         ani("[You feel wonderful]")
         ani("<You feel unnerved>")
         ani("  ")
-        childsn()
+        childsn1()
     elif choice8na.lower() == "w":
         ani("asds")
 
-def childsn():
+#You choose S after N
+def childsn1():
     ani("<You walk along the colourful hallway  see a cute pastel blue door at the end of the hallway>")
     ani("<It makes your heart ache>")
     ani(" ")
@@ -245,7 +255,7 @@ def choice9n():
         ani("<You push the door slightly and see a broken rattle>")
         ani(" ")
         ani("[You already have a knife]")
-        ani("<You push the door and see a sleeping child?")
+        ani("<You push the door and see a sleeping child?>")
         ani("...", delay=0.25)
         ani("<Not a child.>")
         ani("[Your Consciousness happily declares it's another doll! After this? Only 2 more!]")
@@ -258,7 +268,104 @@ def choice9n():
         choice9n()
 
 def choice10n():
-    ani("asd")
+    choice10na=input("Y/N: ")
+    if choice10na.lower() == "y":
+        ani("'Great'")
+        ani("'But i'll give you some time to explore... they're asleep anyways...'")
+        choice11n()
+    else:
+        ani("'Why do you keep thinking that you can change'")
+        ani("⍓︎□︎◆︎🕯︎●︎●︎ ■︎♏︎❖︎♏︎❒︎ ♏︎⬧︎♍︎♋︎◻︎♏︎")
+        ani(" ")
+        ani("You died")
+        clear_screen()
     
+def choice11n():
+    choice11na=input("Explore? (Y/N): ")
+    if choice11na.lower() == "y":
+        ani("'Sounds great, tell me when you're done'")
+        ani("Where would you like to look?")
+        ani("Closet, Bed, Toy shelf")
+        choice12n()
+    else:
+        ani("'You're such a party pooper, and I still need to prepare'")
+        ani("  ")
+        ani("'⍓︎□︎◆︎ ♎︎♓︎♏︎♎︎'")
+        clear_screen()
 
-intro()
+def choice12n():
+    choice12na=input("Choose...: ")
+    if choice12na.lower() == "closet":
+        ani("<You walk towards the closet>")
+        ani("<Your heart hurts even more>")
+        ani("|Do you remember?|", delay=0.2)
+        ani("   ")
+        choice13n()
+    elif choice12na.lower() == "bed" or choice12na.lower() == "toy shelf":
+        ani("<You approach, you stare, you reminisce...>")
+        ani("<All the times you played, all the times you hung out>")
+        ani("<Every time we told those stories...>")
+        ani("<I remember>", delay=0.2)
+        ani("<I look at the person beyond the screen...>", delay=0.2)
+        ani("<Look at the person who shares my name>")
+        ani("<...>")
+        ani("<3684>")
+        ani("  ")
+        ani("['We can't have that']")
+        ani("['♐︎□︎❒︎♑︎♏︎⧫︎']")
+        clear_screen()
+    else:
+        ani("'Not an option'")
+        choice12n()
+
+def choice13n():
+    choice13na=input("Attempt to open it? (Y/N): ")
+    if choice13na.lower() == "y":
+        ani("<You open the closet and realise it's a door to a secret room>")
+        ani("<There's a padlock with 4 digits on it>")
+        ani("Do you want to try openning the door? You will only have one shot")
+        ani("|...This is the least I can do for you|")
+        ani("|3;8|")
+        choice14n()
+    else:
+        ani("<Please try again... for me>", delay=0.2)
+        ani(" ")
+        ani(f"'{name}, you sure are determined...'")
+        clear_screen()
+
+def choice14n():
+    choice14na=input("Open the door? (Type the 4 digit code): ")
+    if choice14na == "3684":
+        ani("<Your consciousness falls silent as you walk into your room>")
+        ani("<You know that once you leave, you'll die>")
+        ani("<He'll find you>")
+        ani("<Her voice is gone aswell>")
+        ani("<On the table is a diary, the name?>")
+        ani(name)
+        ani("<There's only one entry intact>")
+        ani("Read the entry?")
+        mychoice=input("Y/N: ")
+        ani("But your no longer in control", delay=0.15)
+        ani("  ")
+        ani("<Dear Diary, I finally found a home!>")
+        ani("<I have a mum, a dad, and even a little brother! They even have a dog!>")
+        ani("<I finally have a family, a real family>")
+        ani("<I hope this happiness never ends>")
+        ani("........", delay=1)
+        ani("<Complete the game>")
+        ani("<Complete Consciousness>")
+        ani("<Because once you do?>")
+        ani("<I can finally go home>")
+        clear_screen()
+    else:
+        ani("You failed to open the door")
+        ani("[Keep moving]")
+        ani("  ")
+        ani("<You return to the ''childlike'' dolls bed>")
+        ani("<Beside the sleeping child is a paper puzzle>")
+        ani("   ")
+        ani("'I made sure to make the puzzle they intended to, with the responses you would have given'")
+        ani("  ")
+        ani("~Don't you recognize me? Don't you remember me?... Don't you love me?~", delay=0.23)
+        ani("<Your choices: ...;...;...;...;>")
+choice1()

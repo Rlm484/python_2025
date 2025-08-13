@@ -1,5 +1,12 @@
 import sys
 import time
+def choicen():
+   choicena=input("hasik: ")
+   
+
+def b():
+   choicen
+
 
 game_list=['a','b','c']
 
