@@ -227,22 +227,20 @@ def choice8n():
         ani("[You feel wonderful]")
         ani("<You feel unnerved>")
         ani("  ")
-        childsn1()
+        childsn()
     elif choice8na.lower() == "w":
         ani("asds")
 
-def childsn1():
+def childsn():
     ani("<You walk along the colourful hallway  see a cute pastel blue door at the end of the hallway>")
     ani("<It makes your heart ache>")
     ani(" ")
     choice9n()
 
-def choice9nN():
-    choice9n()
-
 def choice9n():
-    choice9=input("Go in? Y/N: ")
-    if choice9.lower() == "y":
+    choice9na=input("Go in? Y/N: ")
+    if choice9na.lower() == "y":
+        ani("  ")
         ani("[:)]")
         ani("<You push the door slightly and see a broken rattle>")
         ani(" ")
@@ -250,15 +248,17 @@ def choice9n():
         ani("<You push the door and see a sleeping child?")
         ani("...", delay=0.25)
         ani("<Not a child.>")
-        ani("[It's another doll! After this? Only 2 more!]")
+        ani("[Your Consciousness happily declares it's another doll! After this? Only 2 more!]")
         ani("|...|")
         ani("   ")
         ani("'Well that's no fun. How about this? I'll give you a puzzle since they're sleeping!'")
+        choice10n()
     else:
         ani("Don't resist", delay=0.2)
         choice9n()
 
-    
+def choice10n():
+    ani("asd")
     
 
-choice9n()
+intro()
