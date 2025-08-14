@@ -51,7 +51,7 @@ def choice1():
     if choice1a.lower() == 'y':
         ani("  ")
         ani("'Very good...'")
-        ani("[Your Consciousness feels content with this option]")
+        ani("[You're content with this option]")
         ani("<As you look around, you see 4 different corridors with labels.>")
         ani ("'Kitchen - North'")
         ani("'Child's room - South'")
@@ -93,7 +93,7 @@ def choice2():
         ani("  ")
         ani("'︎♓♎︎♓︎□︎⧫︎'", delay=0.5)
         ani("  ")
-        ani("[Your Consciousness is dissapointed in yourself]")
+        ani("[You're so dissapointed in yourself]")
         ani("  ")
         ani("ERROR: YOU'VE BEEN KICKED OUT OF THE SYSTEM PLEASE RESTART")
         ani("<Rude>")
@@ -129,7 +129,7 @@ def kitchen():
     ani("  ")
     ani("<You walk along the black and white tiles of the north hallway, following the path until you reach a bright yellow door.>")
     ani("<Do you wish to push open the door?>")
-    ani("[Your Consciousness urges you to keep going, don't stop]")
+    ani("[Keep going, don't stop]")
     choice4n()
 
 def choice4n():
@@ -164,7 +164,7 @@ def choice5n():
         ani("<It's just standing>")
         ani("<Waiting>")
         ani("   ")
-        ani("[Your consciousness urges you to destroy it]")
+        ani("[Destroy it]")
         ani("<You don't have a choice>")
         ani("    ")
         ani("|Why are you here?|")
@@ -218,16 +218,16 @@ def choice7n():
         ani("|I tried my best|")
         ani("  ")
         ani("'You did such a good job'")
-        ani("[Your Consciousness tell you to keep moving]")
+        ani("[Keep moving]")
         ani(" ")
         ani("<You shakely walk out the yellow door and out into the room that started everything>")
-        choice8n()
+        directionn()
     else:
         ani("'Do you think you have a choice?'")
         ani("  ")
         choice7n()
 
-def choice8n():
+def directionn():
     choice8na= input("S/W/E: ")
     if choice8na.lower() == "s":
         ani("  ")
@@ -242,7 +242,7 @@ def choice8n():
 
 #You choose S after N
 def childsn1():
-    ani("<You walk along the colourful hallway  see a cute pastel blue door at the end of the hallway>")
+    ani("<You walk along the colourful hallway and see a cute pastel blue door at the end>")
     ani("<It makes your heart ache>")
     ani(" ")
     choice9n()
@@ -336,7 +336,7 @@ def choice13n():
 def choice14n():
     choice14na=input("Open the door? (Type the 4 digit code): ")
     if choice14na == "3684":
-        ani("<Your consciousness falls silent as you walk into your room>")
+        ani("<Your Consciousness falls silent as you walk into your room>")
         ani("<You know that once you leave, you'll die>")
         ani("<He'll find you>")
         ani("<Her voice is gone aswell>")
@@ -368,4 +368,113 @@ def choice14n():
         ani("  ")
         ani("~Don't you recognize me? Don't you remember me?... Don't you love me?~", delay=0.23)
         ani("<Your choices: ...;...;...;...;>")
+        choice15n()
+
+def choice15n():
+    choice15na=input("<Your answer>: ")
+    ani("~...~")
+    ani("'You selected the correct answer!'")
+    ani("  ")
+    ani("|Don't hurt him... please|")
+    ani("<...>")
+    ani("[But you had no choice]", delay=0.2)
+    ani("  ")
+    directionns()
+
+def directionns():
+    choice16na=input("[Only 2 more] (W/E) Choose W: ")
+    if choice16na.lower() == "w":
+        ani("<You have to keep moving, no point in stopping now>")
+        ani("<You know the consequences of failure>", delay=0.2)
+        ani("<You go back to the main room>")
+        ani("<You feel hatred towards yourself>")
+        ani("[You feel pride towards yourself]")
+        ani("<You feel sick towards the sign in the centre of the main room>")
+        ani("[You feel adoration towards the sign in the centre of the main room]")
+        ani("'Only 2 more to go, ;)'")
+        ani("  ")
+        ani("<You walk along a hallway lined with royal blue carpet, a dark green door awaits you>")
+        ani("|My room... our room|", delay=0.2)
+        ani("[Be careful]")
+        mastersn1()
+    else:
+        ani("'Don't try to escape me'")
+        ani("  ")
+        clear_screen()
+
+#You choose W after S after N
+def mastersn1():
+    choice17na=input("Do you wish to open the door? (Y/N): ")
+    if choice17na.lower() == "y":
+        ani("  ")
+        ani("<You open the door, there doesn't seem to be anyone there>")
+        ani("[He's in the wardrobe]")
+        ani("[He knows what you did to his family]", delay=0.2)
+        ani("  ")
+        choice18n()
+    else:
+        ani("  ")
+        ani("'The less you rebel the better'")
+        mastersn1()
+
+def choice18n():
+    choice18na=input("Do you wish to explore or head to the wardrobe? (Explore/Wadrobe): ")
+    if choice18na.lower() == "explore":
+        ani("<You look around the room and see a drawer>")
+        
+        
+    else:
+        ani("'You're such a party pooper'")
+        ani("  ")
+        ani("'⍓︎□︎◆︎ ♎︎♓︎♏︎♎︎'")
+        clear_screen() 
+
+def choice19n():
+    choice19na=input("Open it? (Y/N): ")
+    if choice19na.lower() == "y":
+        ani("<You open the drawer to see a box, when opened? It's full of daggers>")
+        ani("[You already have the knife]")
+        ani("  ")
+        ani("[There's nothing else to see]")
+        ani("  ")
+        ani("[You move away from the drawer and head towards the wardrobe]")
+        ani("<You move away from the drawer and shakily head to the wardrobe>")
+        ani("|They move away from the drawer and ---- head towards the wardrobe|")
+        ani(" ")
+        ani("-Why did you hurt them?-", delay=0.2)
+        ani("  ")
+        ani("<The sad doll gives you a puzzle>")
+        ani("-What does every parent have/need to do?-")
+        ani("<Your choices: Support(a); Nurture(b); Sacrifice(c); Love(d)>")
+        ani("  ")
+        choice20n()
+    else:
+        ani("<Open the box, that's what they want>")
+        choice19n()
+
+def choice20n():
+    choice20na=input("<Your answer>: ")
+    if choice20na.lower() == "c":
+        ani("'You selected the correct answer!'")
+        ani(" ")
+        ani("[You stab him happily]")
+        ani("<You stab him regretfully>")
+        ani("|They... They stab... They stab him with guilt|", delay=0.2)
+        ani("  ")
+        ani("[Keep moving]")
+        ani("  ")
+        ani("<Will this ever end?>", delay=0.2)
+        ani("   ")
+        choice21()
+    else:
+        ani("'Wrong answer!'")
+        clear_screen()
+
+def choice21():
+    ani("[Finally! Only one more doll left till you're done with your mission]")
+    ani("<Finally... Only one more doll left till you're done with this hell>")
+    ani("  ")
+    ani(" ")
+
+
 choice1()
