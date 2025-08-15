@@ -501,6 +501,6 @@ def choice22nswe():
         choice23nswe()
 
 def choice23nswe():
-    ani(" ")
+    choice23nswea = input("'Walk towards the dog?': ")
 
 choice1()
