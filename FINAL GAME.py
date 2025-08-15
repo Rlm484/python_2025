@@ -2,7 +2,7 @@ import sys
 import os
 import time
 def clear_screen():
-    print('...')
+    print('--------------------------------------------------------')
     time.sleep(20)
     # Check the operating system and run the appropriate clear command
     if os.name == 'nt':  # Windows
@@ -253,8 +253,8 @@ def choice9ns():
         ani("  ")
         ani("[:)]")
         ani("<You push the door slightly and see a broken rattle>")
+        ani("[You already have the knife]")
         ani(" ")
-        ani("[You already have a knife]")
         ani("<You push the door and see a sleeping child?>")
         ani("...", delay=0.25)
         ani("<Not a child.>")
@@ -286,21 +286,21 @@ def choice11ns():
         ani("'Sounds great, tell me when you're done'")
         ani("Where would you like to look?")
         ani("Closet, Bed, Toy shelf")
-        choice12ns()
+        closetcodens()
     else:
         ani("'You're such a party pooper, and I still need to prepare'")
         ani("  ")
         ani("'⍓︎□︎◆︎ ♎︎♓︎♏︎♎︎'")
         clear_screen()
 
-def choice12ns():
+def closetcodens():
     choice12nsa=input("Choose...: ")
     if choice12nsa.lower() == "closet":
         ani("<You walk towards the closet>")
         ani("<Your heart hurts even more>")
         ani("|Do you remember?|", delay=0.2)
         ani("   ")
-        choice13ns()
+        closetns()
     elif choice12nsa.lower() == "bed" or choice12nsa.lower() == "toy shelf":
         ani("<You approach, you stare, you reminisce...>")
         ani("<All the times you played, all the times you hung out>")
@@ -316,24 +316,24 @@ def choice12ns():
         clear_screen()
     else:
         ani("'Not an option'")
-        choice12ns()
+        closetcodens()
 
-def choice13ns():
+def closetns():
     choice13nsa=input("Attempt to open it? (Y/N): ")
     if choice13nsa.lower() == "y":
         ani("<You open the closet and realise it's a door to a secret room>")
         ani("<There's a padlock with 4 digits on it>")
-        ani("Do you want to try openning the door? You will only have one shot")
+        ani("Do you want to try opening the door? You will only have one shot")
         ani("|...This is the least I can do for you|")
         ani("|3;8|")
-        choice14ns()
+        secretroomns()
     else:
         ani("<Please try again... for me>", delay=0.2)
         ani(" ")
         ani(f"'{name}, you sure are determined...'")
         clear_screen()
 
-def choice14ns():
+def secretroomns():
     choice14nsa=input("Open the door? (Type the 4 digit code): ")
     if choice14nsa == "3684":
         ani("<Your Consciousness falls silent as you walk into your room>")
@@ -345,7 +345,7 @@ def choice14ns():
         ani("<There's only one entry intact>")
         ani("Read the entry?")
         mychoice=input("Y/N: ")
-        ani("But your no longer in control", delay=0.15)
+        ani("But you're no longer in control", delay=0.15)
         ani("  ")
         ani("<Dear Diary, I finally found a home!>")
         ani("<I have a mum, a dad, and even a little brother! They even have a dog!>")
@@ -492,7 +492,15 @@ def shednswe1():
 def choice22nswe():
     choice22nswea=input("<You know that you'll need to enter anyways...> (Y/N): ")
     if choice22nswea.lower() == "y":
-        ani("<YOu already>")
+        ani("<You feel your stomach sink as you see a dog like doll>")
+        ani("[No need to explore, you can already see everything anyways]")
+        ani("  ")
+        ani("<As you look around you see a screwdriver>")
+        ani("[You already have the knife]")
+        ani("  ")
+        choice23nswe()
 
+def choice23nswe():
+    ani(" ")
 
 choice1()
