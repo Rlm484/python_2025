@@ -620,6 +620,7 @@ def choice22nswe():
         clear_screen()
 
 def choice23nswe():
+<<<<<<< HEAD
     choice23nswea=input("'Walk towards the dog?' (Y/N): ")
     ani(" ")
     if choice23nswea.lower() == "y":
@@ -647,6 +648,9 @@ def choice23nswe():
         ani("'Sound familiar?'")
         ani("'Same words as last time'")
         clear_screen()
+=======
+    choice23nswea = input("'Walk towards the dog?': ")
+>>>>>>> 52bc56bfdf76ed18aea8ff08c93446d4d9de907e
 
 def choice24nswe():
     ani("[*What does every soul have?*]")
