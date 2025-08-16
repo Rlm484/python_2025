@@ -42,7 +42,7 @@ ani("<But you can't seem to remember>")
 ani(" ")
 ani("<You wake up to a place unfamiliar but familiar to yourself>")
 ani("<The first thing you see? A sign>")
-ani("'Welcome, you have one goal destroy all 4 dolls scattered across different rooms!'")
+ani("'Welcome, you have one goal: destroy all 4 dolls scattered across different rooms!'")
 ani("'If you do... you'll get a prize! How about it?'")
 
 def choice1():
@@ -50,7 +50,7 @@ def choice1():
     
     if choice1a.lower() == 'y':
         ani("  ")
-        ani("'Very good...'")
+        ani("'Perfect...'")
         ani("[You're content with this option]")
         ani("<As you look around, you see 4 different corridors with labels.>")
         ani ("'Kitchen - North'")
@@ -101,7 +101,7 @@ def choice2():
     else:
         ani("  ")
         ani("'⧫︎♒︎♋︎⧫︎🕯︎⬧︎ ■︎□︎⧫︎ ⧫︎♒︎ ︎♏⬧︎♍︎❒︎♓︎ ︎◻⧫︎...'", delay=0.2)
-        ani("<Your feeling unsettled>")
+        ani("<You're feeling unsettled>")
         ani("  ")
         ani("You failed, restart the game to try again") 
         clear_screen()
@@ -263,7 +263,7 @@ def choice9ns():
         ani("[You happily declare inside your Consciousness that it's another doll! After this? Only 2 more!]")
         ani("|...|")
         ani("   ")
-        ani("'Well that's no fun. How about this? You can wait till they wake up!'")
+        ani("'Well, that's no fun. How about this? You can wait till they wake up!'")
         choice10ns()
     else:
         ani("Don't resist", delay=0.2)
@@ -273,7 +273,7 @@ def choice10ns():
     choice10nsa=input("Y/N: ")
     if choice10nsa.lower() == "y":
         ani("'Great'")
-        ani("'But i'll give you some time to explore... they're asleep anyways...'")
+        ani("'But I'll give you some time to explore... they're asleep anyway...'")
         choice11ns()
     else:
         ani("'Why do you keep thinking that you can differ from the path that's laid out?'")
@@ -429,7 +429,7 @@ def mastersnsw():
         choice18nsw()
     else:
         ani("  ")
-        ani("'The less you rebel the better'")
+        ani("'The less you rebel, the better'")
         mastersnsw()
 
 def choice18nsw():
@@ -489,7 +489,7 @@ def choice21nsw():
     ani("<Finally... Only one more doll left till you're done with this hell>")
     ani("  ")
     ani("<You walk back, knowing the sign will say something different>")
-    ani("'Your doing such a good job :)'")
+    ani("'You're doing such a good job :)'")
     ani("[You feel so happy at the recognition]")
     ani("<...>")
     ani("  ")
@@ -546,7 +546,7 @@ def choice23nsew():
     else:
         ani("'What a shame'")
         ani("'You were getting there as well'")
-        ani("'But i'm not giving you an easy way back'")
+        ani("'But I'm not giving you an easy way back'")
         ani("'No'")
         ani("'You can restart if you want to go back...'")
         ani("'Sound familiar?'")
@@ -567,7 +567,7 @@ def choice25nsew():
         ani("<You refuse to use the knife>")
         ani("'Are you really doing this?'")
         ani("<YOU REFUSE TO USE THE KNIFE>")
-        ani("'Your going to have to do it eventually...'")
+        ani("'You're going to have to do it eventually...'")
         ani("<I don't want to>")
         ani("'I know'")
         ani(" ")
@@ -580,7 +580,7 @@ def choice25nsew():
         ani("<Finally... Only one more doll left till you're done with this hell>")
         ani("  ")
         ani("<You walk back, knowing the sign will say something different>")
-        ani("'Your doing such a good job :)'")
+        ani("'You're doing such a good job :)'")
         ani("[You feel so happy at the recognition]")
         ani("<...>")
         ani("  ")
@@ -614,13 +614,12 @@ def choice22nswe():
     else:
         ani("'What a shame'")
         ani("'You were so close as well'")
-        ani("'But i'm not giving you an easy way back'")
+        ani("'But I'm not giving you an easy way back'")
         ani("'No'")
         ani("'You can restart if you want to go back...'")
         clear_screen()
 
 def choice23nswe():
-<<<<<<< HEAD
     choice23nswea=input("'Walk towards the dog?' (Y/N): ")
     ani(" ")
     if choice23nswea.lower() == "y":
@@ -642,7 +641,7 @@ def choice23nswe():
     else:
         ani("'What a shame'")
         ani("'You were so close as well'")
-        ani("'But i'm not giving you an easy way back'")
+        ani("'But I'm not giving you an easy way back'")
         ani("'No'")
         ani("'You can restart if you want to go back...'")
         ani("'Sound familiar?'")
@@ -650,7 +649,6 @@ def choice23nswe():
         clear_screen()
 =======
     choice23nswea = input("'Walk towards the dog?': ")
->>>>>>> 52bc56bfdf76ed18aea8ff08c93446d4d9de907e
 
 def choice24nswe():
     ani("[*What does every soul have?*]")
@@ -666,7 +664,7 @@ def choice25nswe():
         ani("<You refuse to use the knife>")
         ani("'Are you really doing this?'")
         ani("<YOU REFUSE TO USE THE KNIFE>")
-        ani("'Your going to have to do it eventually...'")
+        ani("'You're going to have to do it eventually...'")
         ani("<I don't want to>")
         ani("'I know'")
         ani(" ")
@@ -696,7 +694,7 @@ def mastersnsew():
         choice18nsew()
     else:
         ani("  ")
-        ani("'The less you rebel the better'")
+        ani("'The less you rebel, the better'")
         mastersnsew()
 
 def choice18nsew():
@@ -810,6 +808,7 @@ def the_end():
     ani("Em Thomas - For helping me choose the screw driver")
     ani("Copilot - For giving me .lower()")
     ani("Mr Scott - For also giving me .lower() and explaining it when he was busy with HSC marking")
+    ani("Grammarly - For grammar/spell checking my storyline for Consciousness")
     ani("Calum MacKinnon - For hanging in my room and keeping me company")
     ani("Naomi Rice - Game Tester")
     ani("Grace Ji - Game Tester")
