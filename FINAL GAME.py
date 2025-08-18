@@ -69,7 +69,7 @@ def choice1():
         print(choice1)
         ani("  ")
         ani("'⧫︎♒︎♋︎⧫︎🕯︎⬧︎ ■︎□︎⧫︎ ⧫︎♒︎ ︎♏⬧︎♍︎❒︎♓︎ ︎◻⧫︎...'", delay=0.2)
-        ani("Your feeling unsettled")
+        ani("You’re feeling unsettled")
         ani("  ")
         ani("You failed, restart the game to try again") 
         clear_screen()
@@ -93,7 +93,7 @@ def choice2():
         ani("  ")
         ani("'︎♓♎︎♓︎□︎⧫︎'", delay=0.5)
         ani("  ")
-        ani("[You're so dissapointed in yourself]")
+        ani("[You're so disappointed in yourself]")
         ani("  ")
         ani("ERROR: YOU'VE BEEN KICKED OUT OF THE SYSTEM PLEASE RESTART")
         ani("<Rude>")
@@ -220,7 +220,7 @@ def choice7n():
         ani("'You did such a good job'")
         ani("[Keep moving]")
         ani(" ")
-        ani("<You shakely walk out the yellow door and out into the room that started everything>")
+        ani("<You shakily walk out the yellow door and out into the room that started everything>")
         directionn()
     else:
         ani("'Do you think you have a choice?'")
@@ -265,7 +265,7 @@ def mastersnew():
         mastersnew()
 
 def choice18new():
-    choice18newa=input("Do you wish to explore or head to the wardrobe? (Explore/Wadrobe): ")
+    choice18newa=input("Do you wish to explore or head to the wardrobe? (Explore/Wardrobe): ")
     if choice18newa.lower() == "explore":
         ani("<You look around the room and see a drawer>") 
         choice19new()
@@ -329,8 +329,8 @@ def choice21new():
 
 #You choose E of the NEWS/NESW route
 def shedne():
-    ani("<You walk along the wild east hallway, walking till you see a old woooden door>")
-    ani("[You can barely hold your excitment due to you getting closer to completing your goal]")
+    ani("<You walk along the wild east hallway, walking till you see a old wooden door>")
+    ani("[You can barely hold your excitement due to you getting closer to completing your goal]")
     ani("<But you stop the moment you see the doll through the rotted wood>")
     ani("<...>")
     ani("<It's a dog>")
@@ -474,7 +474,7 @@ def choice10ns():
     choice10nsa=input("Y/N: ")
     if choice10nsa.lower() == "y":
         ani("'Great'")
-        ani("'But i'll give you some time to explore... they're asleep anyways...'")
+        ani("'But I'll give you some time to explore... they're asleep anyways...'")
         choice11ns()
     else:
         ani("'Why do you keep thinking that you can differ from the path that's laid out?'")
@@ -646,7 +646,7 @@ def choice10nes():
     choice10nesa=input("Y/N: ")
     if choice10nesa.lower() == "y":
         ani("'Great'")
-        ani("'But i'll give you some time to explore... they're asleep anyways...'")
+        ani("'But I'll give you some time to explore... they're asleep anyways...'")
         choice11nes()
     else:
         ani("'Why do you keep thinking that you can differ from the path that's laid out?'")
@@ -789,7 +789,7 @@ def mastersnew():
         mastersnew()
 
 def choice18new():
-    choice18newa=input("Do you wish to explore or head to the wardrobe? (Explore/Wadrobe): ")
+    choice18newa=input("Do you wish to explore or head to the wardrobe? (Explore/Wardrobe): ")
     if choice18newa.lower() == "explore":
         ani("<You look around the room and see a drawer>") 
         choice19new()
@@ -870,7 +870,7 @@ def mastersnsw():
         mastersnsw()
 
 def choice18nsw():
-    choice18nswa=input("Do you wish to explore or head to the wardrobe? (Explore/Wadrobe): ")
+    choice18nswa=input("Do you wish to explore or head to the wardrobe? (Explore/Wardrobe): ")
     if choice18nswa.lower() == "explore":
         ani("<You look around the room and see a drawer>") 
         choice19nsw()
@@ -934,8 +934,8 @@ def choice21nsw():
 
 #You choose E of the NSEW route
 def shednsew():
-    ani("<You walk along the wild east hallway, walking till you see a old woooden door>")
-    ani("[You can barely hold your excitment due to you getting closer to completing your goal]")
+    ani("<You walk along the wild east hallway, walking till you see a old wooden door>")
+    ani("[You can barely hold your excitement due to you getting closer to completing your goal]")
     ani("<But you stop the moment you see the doll through the rotted wood>")
     ani("<...>")
     ani("<It's a dog>")
@@ -1027,8 +1027,8 @@ def choice25nsew():
         
 #Final room E of the NSWE route
 def shednswe():
-    ani("<You walk along the wild east hallway, walking till you see a old woooden door>")
-    ani("[You can barely hold your excitment due to you getting closer to completing your goal]")
+    ani("<You walk along the wild east hallway, walking till you see a old wooden door>")
+    ani("[You can barely hold your excitement due to you getting closer to completing your goal]")
     ani("<But you stop the moment you see the doll through the rotted wood>")
     ani("<...>")
     ani("<It's a dog>")
@@ -1137,7 +1137,7 @@ def mastersnsew():
         mastersnsew()
 
 def choice18nsew():
-    choice18nsewa=input("Do you wish to explore or head to the wardrobe? (Explore/Wadrobe): ")
+    choice18nsewa=input("Do you wish to explore or head to the wardrobe? (Explore/Wardrobe): ")
     if choice18nsewa.lower() == "explore":
         ani("<You look around the room and see a drawer>") 
         choice19nsew()
@@ -1218,7 +1218,7 @@ def mastersnesw():
         mastersnsew()
 
 def choice18nesw():
-    choice18nsewa=input("Do you wish to explore or head to the wardrobe? (Explore/Wadrobe): ")
+    choice18nsewa=input("Do you wish to explore or head to the wardrobe? (Explore/Wardrobe): ")
     if choice18nsewa.lower() == "explore":
         ani("<You look around the room and see a drawer>") 
         choice19nesw()
@@ -1311,7 +1311,7 @@ def choice10news():
     choice10newsa=input("Y/N: ")
     if choice10newsa.lower() == "y":
         ani("'Great'")
-        ani("'But i'll give you some time to explore... they're asleep anyways...'")
+        ani("'But I'll give you some time to explore... they're asleep anyways...'")
         choice11news()
     else:
         ani("'Why do you keep thinking that you can differ from the path that's laid out?'")
