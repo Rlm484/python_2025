@@ -199,7 +199,7 @@ def choice5n():
 
 def choice6n():
     choice6na=input("<Your answer>: ")
-    if choice6na == "a" or "A":
+    if choice6na.lower() == "a":
         ani("  ")
         ani("'You selected the correct answer!'")
         ani("'Now you have one last thing to do'")
