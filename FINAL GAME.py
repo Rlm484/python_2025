@@ -319,7 +319,7 @@ def choice20nw():
         ani("  ")
         ani("<Will this ever end?>", delay=0.2)
         ani("   ")
-        choice21nw()
+        directionnw()
     else:
         ani("'Wrong answer!'")
         clear_screen()
@@ -1780,4 +1780,4 @@ def the_end():
     clear_screen()
 
 
-directionnw()
+choice1()
