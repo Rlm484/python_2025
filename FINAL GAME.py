@@ -107,15 +107,14 @@ def choice2():
         clear_screen()
 
 def choice3():
-    choice3a = input("N/S/W/E: ")
+    choice3a = input("N/S/W/E 'Kitchen is the tutorial room, go there': ")
     if choice3a.lower() == "n":
         kitchen()
-    elif choice3a.lower() == "s":
-        childs()
-    elif choice3a.lower() == "w":
-        master()
-    elif choice3a.lower() == "e":
-        garage()
+    elif choice3a.lower()== "e" or choice3a.lower() == "w" or choice3a.lower() == "s":
+        ani("You need to walk before you run, crawl before you walk")
+        ani("Chit Chit player")
+        ani(" ")
+        choice3()
     else:
         ani(" ")
         ani("'That's not an option'")
@@ -358,6 +357,162 @@ def directionnw():
         ani("<...>")
         ani("  ")
         directionnw()
+
+#You choose S of the NWS route
+def childsnws():
+    ani("<You walk along the colourful style of the south hallway, and see a cute pastel blue door at the end>")
+    ani("<It makes your heart ache>")
+    ani(" ")
+    choice9nws()
+
+def choice9nws():
+    choice9nwsa=input("Go in? Y/N: ")
+    if choice9nwsa.lower() == "y":
+        ani("  ")
+        ani("[:)]")
+        ani("<You push the door slightly and see a broken rattle>")
+        ani("[You already have the knife]")
+        ani(" ")
+        ani("<You push the door and see a sleeping child?>")
+        ani("...", delay=0.25)
+        ani("<Not a child.>")
+        ani("[You happily declare inside your Consciousness that it's another doll! After this? Only 2 more!]")
+        ani("|...|")
+        ani("   ")
+        ani("'Well that's no fun. How about this? You can wait till they wake up!'")
+        choice10nws()
+    else:
+        ani("Don't resist", delay=0.2)
+        choice9nws()
+
+def choice10nws():
+    choice10nwsa=input("Y/N: ")
+    if choice10nwsa.lower() == "y":
+        ani("'Great'")
+        ani("'But I'll give you some time to explore... they're asleep anyways...'")
+        choice11nws()
+    else:
+        ani("'Why do you keep thinking that you can differ from the path that's laid out?'")
+        ani("⍓︎□︎◆︎🕯︎●︎●︎ ■︎♏︎❖︎♏︎❒︎ ♏︎⬧︎♍︎♋︎◻︎♏︎")
+        ani(" ")
+        ani("You died")
+        clear_screen()
+    
+def choice11nws():
+    choice11nwsa=input("Explore? (Y/N): ")
+    if choice11nwsa.lower() == "y":
+        ani("'Sounds great, tell me when you're done'")
+        ani("Where would you like to look?")
+        ani("Closet, Bed, Toy shelf")
+        closetcodenws()
+    else:
+        ani("'You're such a party pooper, and I still need to prepare'")
+        ani("  ")
+        ani("'⍓︎□︎◆︎ ♎︎♓︎♏︎♎︎'")
+        clear_screen()
+
+def closetcodenws():
+    choice12nwsa=input("Choose...: ")
+    if choice12nwsa.lower() == "closet":
+        ani("<You walk towards the closet>")
+        ani("<Your heart hurts even more>")
+        ani("|Do you remember?|", delay=0.2)
+        ani("   ")
+        closetnes()
+    elif choice12nwsa.lower() == "bed" or choice12nwsa.lower() == "toy shelf":
+        ani("<You approach, you stare, you reminisce...>")
+        ani("<All the times you played, all the times you hung out>")
+        ani("<Every time we told those stories...>")
+        ani("<I remember>", delay=0.2)
+        ani("<I look at the person beyond the screen...>", delay=0.2)
+        ani("<Look at the person who shares my name>")
+        ani(f"<{name}>", delay=0.2)
+        ani("<3684>")
+        ani("  ")
+        ani("['We can't have that']")
+        ani("['♐︎□︎❒︎♑︎♏︎⧫︎']")
+        clear_screen()
+    else:
+        ani("'Not an option'")
+        closetcodenws()
+
+def closetnws():
+    choice13nwsa=input("Attempt to open it? (Y/N): ")
+    if choice13nwsa.lower() == "y":
+        ani("<You open the closet and realise it's a door to a secret room>")
+        ani("<There's a padlock with 4 digits on it>")
+        ani("Do you want to try opening the door? You will only have one shot")
+        ani("|...This is the least I can do for you|")
+        ani("|3;8|")
+        secretroomnws()
+    else:
+        ani("<Please try again... for me>", delay=0.2)
+        ani(" ")
+        ani(f"'{name}, you sure are determined...'")
+        clear_screen()
+
+def secretroomnws():
+    choice14nwsa=input("Open the door? (Type the 4 digit code): ")
+    if choice14nwsa == "3684":
+        ani("<Your Consciousness falls silent as you walk into your room>")
+        ani("<You know that once you leave, you'll die>")
+        ani("<He'll find you>")
+        ani("<Her voice is gone aswell>")
+        ani("<On the table is a diary, the name?>")
+        ani(name)
+        ani("<There's only one entry intact>")
+        ani("Read the entry?")
+        mychoice=input("Y/N: ")
+        ani("But you're no longer in control", delay=0.15)
+        ani("  ")
+        ani("<Dear Diary, I finally found a home!>")
+        ani("<I have a mum, a dad, and even a little brother! They even have a dog!>")
+        ani("<They really like the dog, my parents say it's been with them since the beggining...>")
+        ani("<But I finally have a family, a real family>")
+        ani("<I hope this happiness never ends>")
+        ani("........", delay=1)
+        ani("<Complete the game>")
+        ani("<Complete Consciousness>")
+        ani("<Because once you do?>")
+        ani("<I can finally go home>")
+        clear_screen()
+    else:
+        ani("You failed to open the door")
+        ani("[Keep moving]")
+        ani("  ")
+        ani("<You return to the ''childlike'' dolls bed>")
+        ani("<Beside the sleeping child is a paper puzzle>")
+        ani("   ")
+        ani("'They finally woke up, so I guess it's time for me to go, :)'")
+        ani("  ")
+        ani("~You're here!~")
+        ani("~...~")
+        ani("~Don't you recognize me? Don't you remember me?... Don't you love me?~", delay=0.23)
+        ani("<Your choices: ...;...;...;...;>")
+        choice15nws()
+
+def choice15nws():
+    choice15nwsa=input("<Your answer>: ")
+    ani("~...~")
+    ani("'You selected the correct answer!'")
+    ani("  ")
+    ani("|Don't hurt him... please|")
+    ani("<...>")
+    ani("[But you had no choice]", delay=0.2)
+    ani("  ")
+    choice16nws()
+
+def choice16nws():
+    ani("<You have to keep moving, no point in stopping now>")
+    ani("<You know the consequences of failure>", delay=0.2)
+    ani("<You go back to the main room>")
+    ani("<You feel hatred towards yourself>")
+    ani("[You feel pride towards yourself]")
+    ani("<You feel sick towards the sign in the centre of the main room>")
+    ani("[You feel adoration towards the sign in the centre of the main room]")
+    ani("'Only 1 more to go, ;)'")
+    ani("  ")
+    shednwse()
 
 #You choose E of the NEWS/NESW route
 def shedne():
@@ -1716,6 +1871,122 @@ def choice16nwes():
     ani("[You feel adoration towards the sign that lies in the main room]")
     ani("  ")
     the_end() 
+
+#Final room E of the NWSE
+def shednwse():
+    ani("<You walk along the wild east hallway, walking till you see a old wooden door>")
+    ani("[You can barely hold your excitement due to you getting closer to completing your goal]")
+    ani("<But you stop the moment you see the doll through the rotted wood>")
+    ani("<...>")
+    ani("<It's a dog>")
+    ani("|Not him... PLEASE NOT HIM...|")
+    ani("  ")
+    choice22nwse()
+    
+def choice22nwse():
+    choice22nwsea=input("<You know that you'll need to enter anyways...> (Y/N): ")
+    if choice22nwsea.lower() == "y":
+        ani("<You feel your stomach sink as you see a dog like doll>")
+        ani("[No need to explore, you can already see everything anyways]")
+        ani("  ")
+        ani("<As you look around you see a screwdriver>")
+        ani("[You already have the knife]")
+        ani("  ")
+        choice23nwse()
+    else:
+        ani("'What a shame'")
+        ani("'You were getting there as well'")
+        ani("'But i'm not giving you an easy way back'")
+        ani("'No'")
+        ani("'You can restart if you want to go back...'")
+        clear_screen()
+
+def choice23nwse():
+    choice23nwsea=input("'Walk towards the dog?' (Y/N): ")
+    ani(" ")
+    if choice23nwsea.lower() == "y":
+        ani("<You walk towards the dog...>")
+        ani("[It's a doll]", delay=0.15)
+        ani("<You walk towards the doll>")
+        ani("[:)]")
+        ani("<As you get closer you look into it's eyes, it seems to recognise you...>")
+        ani("*...*")
+        ani("<It doesn't speak>")
+        ani("<...>")
+        ani("<It only whines>")
+        ani("[But your consciousness understands it]")
+        ani("[*Why is that smell so familiar?*]")
+        ani("'Enough talking, give them the puzzle'")
+        ani("<You hear it whine...>")
+        ani("  ")
+        choice24nwse()
+    else:
+        ani("'What a shame'")
+        ani("'You were getting there as well'")
+        ani("'But i'm not giving you an easy way back'")
+        ani("'No'")
+        ani("'You can restart if you want to go back...'")
+        ani("'Sound familiar?'")
+        ani("'Same words as last time'")
+        clear_screen()
+
+def choice24nwse():
+    ani("[*What does every soul have?*]")
+    ani("<Your choices: Patience(a); Affection(b); Hatred(c); Determination(d)>")
+    ani("  ")
+    choice25nwse()
+
+def choice25nwse():
+    choice25nwsea=input("<Your answer>: ")
+    if choice25nwsea.lower() == "d":
+        ani("'You selected the correct answer!'")
+        ani(" ")
+        ani("<You refuse to use the knife>")
+        ani("'Are you really doing this?'")
+        ani("<YOU REFUSE TO USE THE KNIFE>")
+        ani("'You're going to have to do it eventually...'")
+        ani("<I don't want to>")
+        ani("'I know'")
+        ani(" ")
+        ani("[They stab the dog...]")
+        ani("[They didn't want to...]")
+        ani("'But I worked hard so that you can make it closer to the end :)'")
+        ani("|...|")
+        ani(" ")
+        ani("[Only two more dolls left till you're done with your mission]")
+        ani("<Only two more dolls left till you're done with this hell>")
+        ani("  ")
+        directionnwse()
+        
+
+    else:
+        ani("'You were so close!'")
+        clear_screen()  
+
+def directionnwse():
+    choice16nwsea=input("[Only 2 more to go] (W/S): ")
+    if choice16nwsea.lower() == "w":
+        ani("<As you start heading back you wonder how this all went so wrong>")
+        ani("<But you know you can't stop>")
+        ani("[We won't let you]")
+        ani("<You already knew that>")
+        ani("<Even more so as you reach the main room>")
+        ani("'You really are a wonderful person, ;)'")
+        ani("  ")
+        mastersnew()
+    elif choice16nwsea.lower() == "s":
+        ani("<As you start heading back you wonder how this all went so wrong>")
+        ani("<But you know you can't stop>")
+        ani("[We won't let you]")
+        ani("<You already knew that>")
+        ani("<Even more so as you reach the main room>")
+        ani("'You really are a wonderful person, ;)'")
+        ani(" ")
+        the_end()
+    else:
+        ani("'Don't try to escape me'")
+        ani("  ")
+        directionnwse()
 
 #The End
 def the_end():
