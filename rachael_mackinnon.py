@@ -2032,7 +2032,7 @@ def the_end():
     ani("----------------------------------------------")
     ani("CREDITS")
     ani("Rachael MacKinnon - Main programmer, Story writer, and [The Consciousness]")
-    ani("Mr Groom - Helped with bugging and other issues")
+    ani("Mr Groom - Helped with bugging and other issues (Also where chit chit came from)")
     ani("Em Thomas - For helping me choose the screw driver")
     ani("Copilot - For giving me .lower()")
     ani("Mr Scott - For also giving me .lower() and explaining it when he was busy with HSC marking")
